@@ -1,3 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --pale-blue:hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --payment-hover-color: hsl(245, 54%, 37%);
+  --focus: hsl(244.55, 82.5%, 68.63%);
+}
+
+.card-container {
+  width: 50vh;
+  height: 80vh;
+  max-height: 700px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.img-illustration-hero {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.order-summary-heading {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  color: var(--desaturated-blue);
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.btn-annual-plan {
+  padding: 1em 2em;
+  border-radius: 5px;
+  margin: 2em;
+  background-color: var(--very-pale-blue);
+}
+
+.music-icon {
+  float: left;
+  padding-right: 1.5em;
+}
+
+.title-annual-plan {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.change-text {
+  display: inline;
+  float: right;
+}
+
+.price-year {
+  color: var(--desaturated-blue);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2.5em 2em;
+}
+
+.btn-payment {
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 0.75em 1em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.btn-payment:hover, .btn-payment:focus {
+  cursor: pointer;
+}
+
+.btn-payment:hover {
+  background-color: var(--payment-hover-color);
+}
+
+.btn-payment:focus {
+  background-color: var(--focus);
+}
+
+.btn-cancel-order {
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  padding: 0.75em 1em;
+  font-weight: 600;
+  background: white;
+  color: var(--desaturated-blue);
+}
+
+.btn-cancel-order:hover, .btn-cancel-order:focus {
+  cursor: pointer;
+}
+
+.btn-cancel-order:hover {
+  background-color: var(--very-pale-blue);
+}
+
+.btn-cancel-order:focus {
+  background-color: var(--very-pale-blue);
+  color: var(--dark-blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
