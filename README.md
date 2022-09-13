@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Order summary component - GitHub solution](https://github.com/irishmicoletcando/product-preview-card)
-- Live Site URL: [Demo](https://product-preview-card-omega.vercel.app/)
+- Live Site URL: [Demo](https://order-summary-pearl-gamma.vercel.app/)
 
 ### Built with
 
