@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* wave bg
+gaps
+change textmedia query */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 :root {
@@ -25,14 +21,24 @@ body {
   --focus: hsl(244.55, 82.5%, 68.63%);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #D6E0FE;
+}
+
 .card-container {
-  width: 50vh;
-  height: 80vh;
-  max-height: 700px;
-  border: 1px solid black;
+  width: 55vh;
+  height: 85vh;
+  max-height: 850px;
   border-radius: 20px;
   overflow: hidden;
+  background-color: #FFF;
 }
+
 .img-illustration-hero {
   width: 100%;
   margin-bottom: 2em;
@@ -54,13 +60,19 @@ body {
 .btn-annual-plan {
   padding: 1em 2em;
   border-radius: 5px;
-  margin: 2em;
   background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.annual-plan-left {
+  display: block;
+  margin-left: -40px;
 }
 
 .music-icon {
   float: left;
-  padding-right: 1.5em;
 }
 
 .title-annual-plan {
@@ -69,9 +81,18 @@ body {
   font-weight: 900;
 }
 
-.change-text {
-  display: inline;
+.change-link {
+  display: flex;
   float: right;
+  clear: both;
+  font-size: 0.75rem;
+  color: var(--bright-blue);
+  font-weight: bolder;
+}
+
+.change-link:hover {
+  color: var(--focus);
+  text-decoration: none;
 }
 
 .price-year {
@@ -82,7 +103,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 2.5em 2em;
+  margin: 2em;
 }
 
 .btn-payment {
@@ -114,7 +135,6 @@ body {
   outline: none;
   padding: 0.75em 1em;
   font-weight: 600;
-  background: white;
   color: var(--desaturated-blue);
 }
 
